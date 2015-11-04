@@ -1,0 +1,108 @@
+@import '@economist/component-win-teaser';
+@import '@economist/component-font-officina';
+
+.row-01 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-01 .default__teaser{
+  width: 31.3%;
+  float: left;
+}
+
+.row-01 .default__teaser:nth-child(3n+2) {
+  margin: 0 3%;
+}
+
+.advert-panel  {
+  font-family: "Officina";
+  width: 100%;
+  display: inline-table;
+  margin: 3% 0;
+  position: relative;
+  order: 2;
+}
+
+.ad-panel__container {
+  background-color: #f0f0f0;
+  padding: 3%;
+}
+
+.ad-panel__title {
+  color: var(--color-mid-grey);
+}
+
+.ad-panel__container iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+/*fix for firefox*/
+@-moz-document url-prefix() {
+  .advert-panel  {
+    margin: 30px 0;
+  }
+}
+
+.default__teaser .teaser__title {
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.default__teaser .teaser__text {
+    padding: 6% 0;
+}
+
+.row-01 .default__teaser:nth-child(-n+3) {
+  order: 1;
+}
+
+.row-01 .default__teaser:nth-child(n+4):nth-child(-n+6) {
+  order: 3;
+}
+
+@media screen and (max-width: 790px) {
+
+  .row-01 .default__teaser {
+    margin: 0 !important;
+    width: 48.5%;
+  }
+
+  .row-01 .default__teaser:nth-child(-2n+7) {
+    margin-right: 3% !important;
+  }
+
+  .row-01 .default__teaser:nth-child(-n+2) {
+    order: 1;
+  }
+  .advert-panel {
+    order: 2;
+    margin-bottom: 5%;
+  }
+
+  .row-01 .default__teaser:nth-child(n+3) {
+    order: 3;
+  }
+}
+
+
+@media screen and (max-width: 560px) {
+  .row-01 .default__teaser {
+    margin: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
+  }
+
+  .row-01 .default__teaser:nth-child(-2n+7) {
+    margin-right: 0 !important;
+  }
+
+  .hero__teaser .teaser__group-image img {
+    transform: translateX(-8%);
+  }
+  .advert-panel {
+    margin-bottom: 12%;
+  }
+}
