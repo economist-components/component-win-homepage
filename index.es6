@@ -6,14 +6,14 @@ const today = new Date();
 export default class WinHomePage extends React.Component {
   static get propTypes() {
     return {
-      list: React.PropTypes.array.isRequired,
+      articleList: React.PropTypes.array.isRequired,
     };
   }
   static get defaultProps() {
   }
   render() {
     const winteaserList = [];
-    this.props.list.map((teaser) => {
+    this.props.articleList.map((teaser) => {
       winteaserList.push(
         <WinTeaser {...teaser} key={teaser.teaserId} />
       );
@@ -25,7 +25,7 @@ export default class WinHomePage extends React.Component {
             src: `http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/articles/20140110_ldp001_l.jpg`,
             title: `Just an image`,
           }}
-          type= "hero"
+          variantName= "hero"
           section="United States"
           flyTitle="The UN, religion and development"
           title="Your chance, Mr Obama"
@@ -40,7 +40,7 @@ export default class WinHomePage extends React.Component {
           itemProp="blogPost"
           teaserId={"100092"}
         />
-          <div className="row-01">
+          <div className="article-container">
           {winteaserList}
             <div className="advert-panel">
               <AdPanel adTag="/5605/teg.fmsq/wdif/busi" reserveHeight={250} />

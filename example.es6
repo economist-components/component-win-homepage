@@ -2,13 +2,13 @@ import React from 'react';
 import WinHomePage from './';
 
 const today = new Date();
-const list = [
+const articleList = [
   {
     image: {
       src: `http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/articles/20140110_usd001_l.jpg`,
       title: `Just an image`,
     },
-    type: `default`,
+    variantName: `default`,
     section: `Unitied States`,
     flyTitle: `The UN, religion and development`,
     title: `Mid-term showdown`,
@@ -28,7 +28,7 @@ const list = [
       src: `http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/articles/20140110_chp001_l.jpg`,
       title: `Just an image`,
     },
-    type: `default`,
+    variantName: `default`,
     section: `International`,
     flyTitle: ``,
     title: `Pedalling uphill`,
@@ -48,7 +48,7 @@ const list = [
       src: `http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/articles/20140110_amp001_l.jpg`,
       title: `Just an image`,
     },
-    type: `default`,
+    variantName: `default`,
     section: `Americas`,
     flyTitle: ``,
     title: `Let the games begin`,
@@ -68,7 +68,7 @@ const list = [
       src: `http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/articles/20140110_eup004_l.jpg`,
       title: `Just an image`,
     },
-    type: `default`,
+    variantName: `default`,
     section: `Europe`,
     flyTitle: ``,
     title: `Erdogan’s dilemma`,
@@ -88,7 +88,7 @@ const list = [
       src: `http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/articles/20140110_ldp006_l.jpg`,
       title: `Just an image`,
     },
-    type: `default`,
+    variantName: `default`,
     section: `Leaders`,
     flyTitle: ``,
     title: `The coming tech-lash`,
@@ -108,7 +108,7 @@ const list = [
       src: `http://cdn.static-economist.com/sites/default/files/imagecache/original-size/20151003_WOM001_473.png`,
       title: `Just an image`,
     },
-    type: `default`,
+    variantName: `default`,
     section: `Leaders`,
     flyTitle: `The UN, religion and development`,
     title: `Migration crisis`,
@@ -125,5 +125,5 @@ const list = [
   },
 ];
 export default (
-  <WinHomePage list={list}/>
+  <WinHomePage articleList={articleList}/>
 );

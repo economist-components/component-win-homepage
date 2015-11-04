@@ -1,17 +1,18 @@
 @import '@economist/component-win-teaser';
 @import '@economist/component-font-officina';
+@import '@economist/component-font-neutra2';
 
-.row-01 {
+.article-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.row-01 .default__teaser{
+.article-container .default__teaser{
   width: 31.3%;
   float: left;
 }
 
-.row-01 .default__teaser:nth-child(3n+2) {
+.article-container .default__teaser:nth-child(3n+2) {
   margin: 0 3%;
 }
 
@@ -46,35 +47,39 @@
 }
 
 .default__teaser .teaser__title {
-  font-size: 26px;
-  line-height: 30px;
+  font-size: 28px;
+  line-height: 32px;
   margin-bottom: 10px;
 }
 
 .default__teaser .teaser__text {
-    padding: 6% 0;
+  padding: 6% 0;
 }
 
-.row-01 .default__teaser:nth-child(-n+3) {
+.hero__teaser .teaser__group-image {
+  overflow: hidden;
+}
+
+.article-container .default__teaser:nth-child(-n+3) {
   order: 1;
 }
 
-.row-01 .default__teaser:nth-child(n+4):nth-child(-n+6) {
+.article-container .default__teaser:nth-child(n+4):nth-child(-n+6) {
   order: 3;
 }
 
 @media screen and (max-width: 790px) {
 
-  .row-01 .default__teaser {
+  .article-container .default__teaser {
     margin: 0 !important;
     width: 48.5%;
   }
 
-  .row-01 .default__teaser:nth-child(-2n+7) {
+  .article-container .default__teaser:nth-child(-2n+7) {
     margin-right: 3% !important;
   }
 
-  .row-01 .default__teaser:nth-child(-n+2) {
+  .article-container .default__teaser:nth-child(-n+2) {
     order: 1;
   }
   .advert-panel {
@@ -82,27 +87,30 @@
     margin-bottom: 5%;
   }
 
-  .row-01 .default__teaser:nth-child(n+3) {
+  .article-container .default__teaser:nth-child(n+3) {
     order: 3;
   }
 }
 
-
 @media screen and (max-width: 560px) {
-  .row-01 .default__teaser {
+  .article-container .default__teaser {
     margin: 0 !important;
     margin-right: 0 !important;
     width: 100%;
   }
 
-  .row-01 .default__teaser:nth-child(-2n+7) {
+  .article-container .default__teaser:nth-child(-2n+7) {
     margin-right: 0 !important;
   }
 
-  .hero__teaser .teaser__group-image img {
-    transform: translateX(-8%);
-  }
   .advert-panel {
     margin-bottom: 12%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero__teaser .teaser__img  {
+    width: 175%;
+    transform: translateX(-20%);
   }
 }
