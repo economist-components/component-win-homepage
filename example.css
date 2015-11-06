@@ -1,0 +1,28 @@
+@import './index.css';
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.ad-panel__animated {
+  transform: translateY(100px);
+  transition: all 0.4s ease-out 0.5s;
+  transition-property: opacity, transform;
+  opacity: 0;
+}
+
+.ad-panel__animated.ad-panel--visible {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+#component-preview {
+  max-width: 1190px;
+  margin: 0 auto;
+}
