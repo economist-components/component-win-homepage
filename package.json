@@ -124,12 +124,15 @@
     "pretest": "npm run lint",
     "provision": "devpack-configure ./package.json",
     "serve": "browser-sync start --server --files '*.{html,js}'",
+    "pretest": "npm run doc:js",
     "test": "karma start",
     "watch": "parallelshell 'npm run doc:watch' 'npm run prepublish:watch' 'npm run serve'"
   },
   "dependencies": {
+    "@economist/component-ad-panel": "^1.0.3",
+    "@economist/component-font-neutra2": "^1.0.0",
     "@economist/component-font-officina": "^1.0.0",
-    "@economist/component-font-neutra2": "^1.0.0"
+    "@economist/component-win-teaser": "^1.0.11"
   },
   "devDependencies": {
     "@economist/component-devpack": "^3.4.2",
@@ -146,13 +149,17 @@
     "eslint-config-strict-react": "^2.0.0",
     "eslint-plugin-filenames": "^0.1.2",
     "eslint-plugin-react": "^3.3.1",
+    "karma": "^0.13.15",
     "karma-chai": "^0.1.0",
     "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-phantomjs2-launcher": "^0.3.2",
     "karma-sauce-launcher": "^0.2.14",
     "mocha": "^2.2.5",
     "npm-assets": "^0.1.0",
     "npm-watch": "0.0.1",
     "parallelshell": "^2.0.0",
+    "phantomjs": "^1.9.18",
     "pre-commit": "^1.0.10",
     "react": "^0.14.0||^0.14.0-rc",
     "react-addons-test-utils": "^0.14.0",
