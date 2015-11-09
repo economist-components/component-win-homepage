@@ -2,7 +2,7 @@ import React from 'react';
 import WinHomePage from './';
 
 const today = new Date();
-const articleList = [
+const articles = [
   {
     image: {
       src: `http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/articles/20140110_usd001_l.jpg`,
@@ -123,7 +123,27 @@ const articleList = [
     itemProp: ``,
     teaserId: `6`,
   },
+  {
+    image: {
+      src: `http://cdn.static-economist.com/sites/default/files/imagecache/full-width/images/2015/09/blogs/erasmus/20150905_blp516_apple_news.jpg`,
+      title: `Just an image`,
+    },
+    variantName: `default`,
+    section: `Leaders`,
+    flyTitle: `Diverse, desperate migrants have divided European Christians`,
+    title: `Migrants, Christianity and Europe`,
+    dateTime: today,
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    minim veniam.`,
+    link: {
+      href: `http://www.economist.com/blogs/erasmus/2015/09`,
+    },
+    itemType: ``,
+    itemProp: ``,
+    teaserId: `7`,
+  },
 ];
 export default (
-  <WinHomePage articleList={articleList}/>
+  <WinHomePage articles={articles}/>
 );
