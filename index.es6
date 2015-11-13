@@ -16,7 +16,8 @@ if (process.env.NODE_ENV !== 'production') {
 export default function WinHomePage({
   articles,
   advert = {
-    adTag: '/5605/teg.fmsq/wdif/busi',
+    'adTag': '/5605/theworldin',
+    'sizes': [ [ 970, 250 ], [ 1, 1 ], [ 300, 250 ], [ 728, 90 ] ],
     reserveHeight: 250,
   }
 }) {
