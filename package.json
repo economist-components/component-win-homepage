@@ -1,6 +1,6 @@
 {
   "name": "@economist/component-win-homepage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Home page for the World in 2016",
   "author": "The Economist (http://economist.com)",
   "license": "MIT",
@@ -129,7 +129,7 @@
     "watch": "parallelshell 'npm run doc:watch' 'npm run prepublish:watch' 'npm run serve'"
   },
   "dependencies": {
-    "@economist/component-ad-panel": "^1.0.3",
+    "@economist/component-ad-panel": "^1.1.0",
     "@economist/component-font-neutra2": "^1.0.0",
     "@economist/component-font-officina": "^1.0.0",
     "@economist/component-win-teaser": "^1.0.11"
