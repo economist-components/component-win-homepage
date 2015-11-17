@@ -1,6 +1,6 @@
 {
   "name": "@economist/component-win-homepage",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Home page for the World in 2016",
   "author": "The Economist (http://economist.com)",
   "license": "MIT",
@@ -121,10 +121,9 @@
     "prepages": "npm run doc",
     "prepublish": "babel . -d . -x .es6 --ignore node_modules",
     "prepublish:watch": "npm run prepublish -- -w",
-    "pretest": "npm run lint",
+    "pretest": "npm run doc:js",
     "provision": "devpack-configure ./package.json",
     "serve": "browser-sync start --server --files '*.{html,js}'",
-    "pretest": "npm run doc:js",
     "test": "karma start",
     "watch": "parallelshell 'npm run doc:watch' 'npm run prepublish:watch' 'npm run serve'"
   },
