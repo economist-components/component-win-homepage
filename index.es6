@@ -13,7 +13,6 @@ if (process.env.NODE_ENV !== 'production') {
   WinHomepageAdPanel.propTypes = AdPanel.propTypes;
 }
 
-/* eslint-disable react/no-multi-comp */
 export default function WinHomePage({
   articles,
   advert = {

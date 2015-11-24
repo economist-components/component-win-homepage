@@ -128,7 +128,7 @@
     "watch": "parallelshell 'npm run doc:watch' 'npm run prepublish:watch' 'npm run serve'"
   },
   "dependencies": {
-    "@economist/component-ad-panel": "^1.1.0",
+    "@economist/component-ad-panel": "^1.2.1",
     "@economist/component-font-neutra2": "^1.0.0",
     "@economist/component-font-officina": "^1.0.0",
     "@economist/component-win-teaser": "^1.3.0"
@@ -144,8 +144,8 @@
     "chai-things": "^0.2.0",
     "cssnext": "^1.8.4",
     "eslint": "^1.3.1",
-    "eslint-config-strict": "^5.0.0",
-    "eslint-config-strict-react": "^2.0.0",
+    "eslint-config-strict": "^7.0.2",
+    "eslint-config-strict-react": "^4.0.0",
     "eslint-plugin-filenames": "^0.1.2",
     "eslint-plugin-react": "^3.3.1",
     "karma": "^0.13.15",
