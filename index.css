@@ -14,6 +14,7 @@
 .world-in-homepage .default__teaser {
   width: 31.3%;
   float: left;
+  margin-bottom: 4%;
 }
 
 /* 1 2 (3) 4 5 (6) 7 8 (9)... */
@@ -28,6 +29,7 @@
   margin: 3% 0;
   position: relative;
   order: 2;
+  margin-bottom: 4%;
 }
 
 .world-in-homepage__advert-panel .ad-panel__container {
@@ -44,7 +46,8 @@
   display: block;
 }
 
-.world-in-homepage .default__teaser .teaser__title {
+.world-in-homepage .default__teaser .teaser__title,
+.world-in-homepage .hero__teaser .teaser__title {
   font-size: 28px;
   line-height: 32px;
   margin-bottom: 10px;
@@ -59,8 +62,35 @@
 }
 
 /* 1 2 3 4 (5) (6) (7) 8 9 10 */
-.world-in-homepage .default__teaser:nth-child(n+5):nth-child(-n+7),{
+.world-in-homepage .default__teaser:nth-child(n+5):nth-child(-n+7) {
   order: 3;
+}
+
+.world-in-homepage .ad-panel__container {
+  width: 100%;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.world-in-homepage .ad-panel__container--styled .ad-panel__googlead:before, .ad-panel__container--styled .ad-panel__googlead {
+    background-color: transparent;
+}
+
+.world-in-homepage .teaser__image-text-container {
+    margin: 0 5%;
+    padding-left: 4%;
+}
+
+.world-in-homepage .teaser__group-text {
+    margin: -7px 5%;
+    padding: 0px 4%;
+}
+
+.world-in-homepage .hero__teaser .teaser__group-text {
+    padding-top: 3%;
+}
+
+.world-in-homepage .teaser__group-image:after {
+  opacity: 0.4;
 }
 
 @media screen and (max-width: 790px) {
@@ -76,7 +106,7 @@
 
   /* 1 (2) 3 (4) 5 (6) 7 (8) 9 (10)... */
   .world-in-homepage .default__teaser:nth-child(2n+2) {
-    margin: 0 3% 0 0;
+    margin: 0 3% 4% 0;
   }
 
   /* (1) 2 (3) 4 (5) 6 (7) 8 (9) 10... */
@@ -100,14 +130,13 @@
 
   /* Specificity override :( */
   .world-in-homepage .default__teaser:nth-child(n) {
-    margin: 0;
+    margin: 0 0 4% 0;
     width: 100%;
   }
 
   .world-in-homepage__advert-panel {
     margin-bottom: 12%;
   }
-
 }
 
 @media screen and (max-width: 480px) {
